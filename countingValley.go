@@ -7,6 +7,7 @@ import (
 
 func CountingValleys(steps int, path string) (valleyCounter int) {
 	pathList := strings.Split(path, "")
+	fmt.Println(pathList)
 	elev := 0
 	var lembah bool
 
@@ -28,7 +29,5 @@ func CountingValleys(steps int, path string) (valleyCounter int) {
 }
 
 func main() {
-	a := "abcdefghijk"
-	b := string(a[0])
-	fmt.Println(b)
+	fmt.Println(CountingValleys(8, "UDDDUDUU"))
 }
