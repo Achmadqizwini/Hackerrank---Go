@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func sockMerchant(n int, ar []int32) int32 {
@@ -14,8 +13,7 @@ func sockMerchant(n int, ar []int32) int32 {
 
 	var res int32
 	for _, v := range temp {
-		a := int32(math.Floor(float64(v / 2)))
-		fmt.Println(a)
+		a := int32(v / 2)
 		res += a
 	}
 	return res
