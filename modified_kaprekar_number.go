@@ -8,9 +8,9 @@ import (
 
 func kaprekarNumber(p, q int32) {
 	var exist bool
-	for i := p; i < q; i++ {
+	for i := uint64(p); i <= uint64(q); i++ {
 		sqr := i * i
-		fmt.Println("sqr", sqr)
+		// fmt.Println("sqr", sqr)
 		a := strconv.Itoa(int(sqr))
 
 		arrA := strings.Split(a, "")
@@ -18,8 +18,8 @@ func kaprekarNumber(p, q int32) {
 		x := arrA[0:mid]
 		y := arrA[mid:]
 
-		fmt.Println("x", x)
-		fmt.Println("y", y)
+		// fmt.Println("x", x)
+		// fmt.Println("y", y)
 
 		x1 := ""
 		y1 := ""
@@ -45,6 +45,7 @@ func kaprekarNumber(p, q int32) {
 }
 
 func main() {
-	kaprekarNumber(1, 100)
-	kaprekarNumber(77777, 77780)
+	// kaprekarNumber(1, 100)
+	// kaprekarNumber(77777, 77780)
+	kaprekarNumber(1, 99999)
 }
