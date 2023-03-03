@@ -28,11 +28,12 @@ func superReducedString(s string) string {
 		// remove the pair of adjacent letters
 		runes = append(runes[:pairIndex], runes[pairIndex+2:]...)
 		fmt.Println("=======")
+		fmt.Println(runes[:pairIndex], "pairIndex :", pairIndex)
 		fmt.Println(runes)
 	}
 }
 
 func main() {
 	fmt.Println(superReducedString("aaabccddd"))
-	fmt.Println(superReducedString("abba"))
+	// fmt.Println(superReducedString("abba"))
 }
